@@ -1,0 +1,18 @@
+html {
+	transition: background-color 0.3s ease;
+	background-color: rgb(37, 37, 37);
+}
+
+body {
+	transition: background-color 0.3s ease;
+}
+
+html.dark {
+	background-color: #121212;
+	color: white;
+}
+
+body.dark {
+	background-color: #121212;
+	color: white;
+}
