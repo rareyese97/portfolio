@@ -1,16 +1,17 @@
 "use client";
 import { ThemeProvider } from "@/./app/ThemeContext";
 import Image from "next/image";
-import ThemeToggle from "../../ThemeToggle";
 import { motion } from "framer-motion";
 import "../../styles/global.css";
 import { useState, useRef, useEffect } from "react";
 import ProjectModal from "@/app/ProjectModal";
 import { useTheme } from "@/app/ThemeContext";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
+import type { Project } from '@/app/ProjectModal'; 
+
 
 export default function Home() {
-	const [selectedProject, setSelectedProject] = useState(null);
+	const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 	const projectsRef = useRef<HTMLElement | null>(null);
 	const { theme, toggleTheme } = useTheme();
 
@@ -26,9 +27,9 @@ export default function Home() {
 				toggleTheme(prefersDark ? "dark" : "light");
 			}
 		}
-	}, []);
+	}, [toggleTheme]);
 
-	const handleProjectClick = (project: any) => setSelectedProject(project);
+	const handleProjectClick = (project: Project) => setSelectedProject(project);
 	const handleCloseModal = () => setSelectedProject(null);
 
 	return (
@@ -78,7 +79,7 @@ export default function Home() {
 
 					{/* Right Column */}
 					<div className="w-full md:w-[30%] text-center md:text-left">
-						<h1 className="text-4xl font-bold mb-4">Hey, I'm Robert Reyes-Enamorado</h1>
+						<h1 className="text-4xl font-bold mb-4">Hey, I&apos;m Robert Reyes-Enamorado</h1>
 						<p className="text-lg text-gray-200">I’m an aspiring software engineer who is ready for a challenge.</p>
 						<br />
 						{/* View My Projects Button */}
@@ -133,7 +134,7 @@ export default function Home() {
 						<div>
 							<h2 className="text-xl font-semibold mb-4">About Me</h2>
 							<p className="text-base">
-								I'm a developer who enjoys building thoughtful, user-focused web and mobile experiences. I’ve worked
+								I&apos;m a developer who enjoys building thoughtful, user-focused web and mobile experiences. I’ve worked
 								with modern frameworks like React and Express, and I’m always looking to improve and learn something
 								new. Whether it’s refining a UI or debugging backend logic, I like diving into problems and figuring out
 								clean solutions. I like to ensure that whatever I design is intuitive and workable for the average user.
@@ -327,7 +328,7 @@ export default function Home() {
 									desc: "Tracks medication schedules and sends text message notifications to users according to schedule. Also includes an interaction checker that uses National Library of Medicine's drug API. Won \"Most Impactful Project\" award at CodePath's SITE 2022 Demo Day",
 									img: "/medtracker.png",
 									techStack: ["PostgreSQL", "Express", "React", "Node", "Bootstrap"],
-									video: "https://www.youtube.com/watch?v=1DhxBA1zoxg&t=4717s",
+									video: "/medvid.mp4",
 								},
 								{
 									title: "Campus Navigator",
@@ -340,13 +341,13 @@ export default function Home() {
 									title: "Battleship Game",
 									desc: "Multiplayer web game with real-time play and leaderboards. Sign up and create open lobbies with websockets. Players can see your open room and join your match and start to play live. Score are accumulated on a leaderboard, which users can see.",
 									img: "/battle.png",
-									techStack: ["HTML", "JavaScript", "CSS", , "MongoDB", "Flask", "Websockets"],
+									techStack: ["HTML", "JavaScript", "CSS", "MongoDB", "Flask", "Websockets"],
 								},
 								{
 									title: "Explore: Find Places Nearby",
 									desc: "Find cool places nearby the University at Buffalo's North Campus. Take pictures of spots to hang out, eat, have fun, or study and then post them. Your posts will appear in a feed and on a map for others to checkout and maybe go visit.",
 									img: "/Explore.png",
-									techStack: ["Parse", "Postman", "XCode", , "Swift"],
+									techStack: ["Parse", "Postman", "XCode", "Swift"],
 									video: "https://www.youtube.com/watch?v=1US3MNG-go0",
 								},
 							].map((project, idx) => (

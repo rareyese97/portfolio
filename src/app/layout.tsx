@@ -22,7 +22,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
 	title: "Portfolio",
-	description: "Robert Reyes-Enamorado's personal site",
+	description: "Robert Reyes-Enamorado&apos;s personal site",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

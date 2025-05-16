@@ -3,8 +3,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FiExternalLink } from "react-icons/fi";
+import Image from "next/image";
 
-interface Project {
+export interface Project {
 	title: string;
 	desc: string;
 	img: string;
@@ -42,16 +43,14 @@ export default function ProjectModal({ project, onClose, theme }: ModalProps) {
 					/>
 				);
 			} else {
-				return <video
-					src={project.video}
-					controls
-					className="w-full max-h-[80vh] object-contain rounded-lg mb-4"
-				/>;
+				return <video src={project.video} controls className="w-full max-h-[80vh] object-contain rounded-lg mb-4" />;
 			}
 		} else {
 			return (
-				<div className="relative mb-4">
-					<img src={project.img} alt={project.title} className="w-full h-100 object-cover rounded-lg" />
+				<div className="relative w-full aspect-video mb-4">
+					{" "}
+					{/* You can change aspect ratio */}
+					<Image src={project.img} alt={project.title} fill className="object-cover rounded-lg" />
 					{project.link && (
 						<a
 							href={project.link}
