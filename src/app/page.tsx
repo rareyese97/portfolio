@@ -333,7 +333,7 @@ export default function Home() {
 								{
 									title: "Campus Navigator",
 									desc: "Helps students navigate the University at Buffalo's north campus. Utilizes Breadth First Search on a graph of points of interests in building throughout campus. Find the path between any two buildings through the tunnel system the campus provides.",
-									img: "/navigate.PNG",
+									img: "/navigate.png",
 									techStack: ["React Native"],
 									video: "/navigate.mp4",
 								},
