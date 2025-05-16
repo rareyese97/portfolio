@@ -7,8 +7,7 @@ import { useState, useRef, useEffect } from "react";
 import ProjectModal from "@/app/ProjectModal";
 import { useTheme } from "@/app/ThemeContext";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
-import type { Project } from '@/app/ProjectModal'; 
-
+import type { Project } from "@/app/ProjectModal";
 
 export default function Home() {
 	const [selectedProject, setSelectedProject] = useState<Project | null>(null);
@@ -134,10 +133,11 @@ export default function Home() {
 						<div>
 							<h2 className="text-xl font-semibold mb-4">About Me</h2>
 							<p className="text-base">
-								I&apos;m a developer who enjoys building thoughtful, user-focused web and mobile experiences. I’ve worked
-								with modern frameworks like React and Express, and I’m always looking to improve and learn something
-								new. Whether it’s refining a UI or debugging backend logic, I like diving into problems and figuring out
-								clean solutions. I like to ensure that whatever I design is intuitive and workable for the average user.
+								I&apos;m a developer who enjoys building thoughtful, user-focused web and mobile experiences. I’ve
+								worked with modern frameworks like React and Express, and I’m always looking to improve and learn
+								something new. Whether it’s refining a UI or debugging backend logic, I like diving into problems and
+								figuring out clean solutions. I like to ensure that whatever I design is intuitive and workable for the
+								average user.
 							</p>{" "}
 						</div>
 
@@ -333,7 +333,7 @@ export default function Home() {
 								{
 									title: "Campus Navigator",
 									desc: "Helps students navigate the University at Buffalo's north campus. Utilizes Breadth First Search on a graph of points of interests in building throughout campus. Find the path between any two buildings through the tunnel system the campus provides.",
-									img: "/navigate.png",
+									img: "/navigate.jpg",
 									techStack: ["React Native"],
 									video: "/navigate.mp4",
 								},
