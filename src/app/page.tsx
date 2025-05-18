@@ -90,7 +90,7 @@ export default function Home() {
 						>
 							View My Projects
 						</button>
-						<div className="flex justify-center md:justify-start space-x-6 mt-2 w-full">
+						<div className="flex justify-center md:justify-start space-x-6 mt-6 w-full">
 							<a
 								href="mailto:rareyese97@gmail.com"
 								className="text-gray-700 dark:text-gray-300 hover:text-red-600 dark:hover:text-red-400 transition text-2xl"
@@ -98,6 +98,7 @@ export default function Home() {
 							>
 								<FaEnvelope />
 							</a>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 							<a
 								href="https://www.linkedin.com/in/robertreyese/"
 								target="_blank"
@@ -107,6 +108,7 @@ export default function Home() {
 							>
 								<FaLinkedin />
 							</a>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 							<a
 								href="https://github.com/rareyese97"
 								target="_blank"
