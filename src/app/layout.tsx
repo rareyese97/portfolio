@@ -21,7 +21,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-	title: "Robert&apos;s Portfolio",
+	title: "Robert's Portfolio",
 	description: "Robert Reyes-Enamorado&apos;s personal site",
 	icons: {
 		icon: "/favicon.ico",  
