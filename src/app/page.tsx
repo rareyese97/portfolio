@@ -34,7 +34,7 @@ export default function Home() {
 	return (
 		<ThemeProvider>
 			<main
-				className={`min-h-screen bg-white text-black ${
+				className={`min-h-screen bg-[#FFFFFF] text-black ${
 					theme === "dark" ? "dark:bg-[#181818] dark:text-white" : ""
 				} font-sans`}
 			>
@@ -126,7 +126,7 @@ export default function Home() {
 					whileInView={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.6 }}
 					viewport={{ once: true, amount: 0.2 }}
-					className={`px-8 py-16 ${theme === "dark" ? "bg-[#1d1d1d] text-white" : "bg-white text-black"}`}
+					className={`px-8 py-16 ${theme === "dark" ? "bg-[#1d1d1d] text-white" : "bg-[#eeeeee] text-black"}`}
 				>
 					<div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 w-full md:w-[70%] px-4 ">
 						{/* About Me Column */}
@@ -271,7 +271,7 @@ export default function Home() {
 					whileInView={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.6 }}
 					viewport={{ once: true, amount: 0.2 }}
-					className={`px-8 py-16 ${theme === "dark" ? "bg-[#1d1d1d] text-white" : "bg-white text-black"}`}
+					className={`px-8 py-16 ${theme === "dark" ? "bg-[#1d1d1d] text-white" : "bg-[#eeeeee] text-black"}`}
 				>
 					<div className="max-w-6xl mx-auto w-full md:w-[70%]">
 						<h2 className="text-xl font-semibold mb-3">Experience</h2>
