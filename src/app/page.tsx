@@ -35,7 +35,7 @@ export default function Home() {
 		<ThemeProvider>
 			<main
 				className={`min-h-screen bg-[#FFFFFF] text-black ${
-					theme === "dark" ? "dark:bg-[#181818] dark:text-white" : ""
+					theme === "dark" ? "dark:bg-[#171717] dark:text-white" : ""
 				} font-sans`}
 			>
 				<div className="fixed top-4 right-4 z-50">
@@ -294,9 +294,6 @@ export default function Home() {
 							<ul className="list-disc list-inside space-y-2 ml-6">
 								<li>Engineered and maintained multiple websites using PostgreSQL, Express.js, React, and Node.js</li>
 								<li>Managed databases and built servers, utilizing RESTful APIs for efficient data flow</li>
-								<li>
-									Built mobile apps in Swift, including user interfaces and core functionality like data management
-								</li>
 								<li>Integrated NPM libraries such as Cron and Bcrypt to facilitate frontend and backend development</li>
 								<li>Collaborated with a remote team, supporting project planning and providing assistance</li>
 							</ul>
