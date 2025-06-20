@@ -323,6 +323,15 @@ export default function Home() {
 									link: "https://webdev.cse.buffalo.edu/hci/teams/wonone",
 								},
 								{
+									title: "SinkThatShip",
+									desc: `Multiplayer web game with real-time match-making, leaderboards & in-game chat.  
+									Built with Next.js, Express, Socket.IO & PostgreSQL.  
+									Live at sinkthatship.com`,
+									img: "/sinkthatship.png",
+									techStack: ["TypeScript", "Next.js", "Express", "Socket.IO", "PostgreSQL", "Tailwind CSS"],
+									link: "https://sinkthatship.com",
+								},
+								{
 									title: "Medicine Tracker",
 									desc: "Tracks medication schedules and sends text message notifications to users according to schedule. Also includes an interaction checker that uses National Library of Medicine's drug API. Won \"Most Impactful Project\" award at CodePath's SITE 2022 Demo Day",
 									img: "/medtracker.png",
@@ -335,12 +344,6 @@ export default function Home() {
 									img: "/navigate.jpg",
 									techStack: ["React Native"],
 									video: "/navigate.mp4",
-								},
-								{
-									title: "Battleship Game",
-									desc: "Multiplayer web game with real-time play and leaderboards. Sign up and create open lobbies with websockets. Players can see your open room and join your match and start to play live. Score are accumulated on a leaderboard, which users can see.",
-									img: "/battle.png",
-									techStack: ["HTML", "JavaScript", "CSS", "MongoDB", "Flask", "Websockets"],
 								},
 								{
 									title: "Explore: Find Places Nearby",
