@@ -316,11 +316,11 @@ export default function Home() {
 						<div className="flex gap-6 w-full overflow-x-auto pl-4 pr-4 pt-2 pb-8 snap-x snap-mandatory">
 							{[
 								{
-									title: "Trek",
-									desc: "A social media website for hikers. Post pictures of your hikes, comment on other posts, plan hikes, and message your friends. Take inspiration from other posts and maybe go visit some of the local hikes nearby users have posted about.",
-									img: "/trek.png",
-									techStack: ["React", "Swagger API", "Raw CSS"],
-									link: "https://webdev.cse.buffalo.edu/hci/teams/wonone",
+									title: "Med-Tracker.app (2025)",
+									desc: "Tracks medication schedules and sends email notifications to users according to schedule. This is a revamp of the 2022 Med Tracker website",
+									img: "/med-tracker.png",
+									techStack: ["TypeScript", "Next.js", "Express", "MongoDB", "Tailwind CSS"],
+									link: "https://med-tracker.app",
 								},
 								{
 									title: "SinkThatShip",
@@ -332,7 +332,14 @@ export default function Home() {
 									link: "https://sinkthatship.com",
 								},
 								{
-									title: "Medicine Tracker",
+									title: "Trek",
+									desc: "A social media website for hikers. Post pictures of your hikes, comment on other posts, plan hikes, and message your friends. Take inspiration from other posts and maybe go visit some of the local hikes nearby users have posted about.",
+									img: "/trek.png",
+									techStack: ["React", "Swagger API", "Raw CSS"],
+									link: "https://webdev.cse.buffalo.edu/hci/teams/wonone",
+								},
+								{
+									title: "Medicine Tracker (2022)",
 									desc: "Tracks medication schedules and sends text message notifications to users according to schedule. Also includes an interaction checker that uses National Library of Medicine's drug API. Won \"Most Impactful Project\" award at CodePath's SITE 2022 Demo Day",
 									img: "/medtracker.png",
 									techStack: ["PostgreSQL", "Express", "React", "Node", "Bootstrap"],
