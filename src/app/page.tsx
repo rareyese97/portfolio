@@ -317,7 +317,7 @@ export default function Home() {
 							{[
 								{
 									title: "Med-Tracker.app (2025)",
-									desc: "Tracks medication schedules and sends email notifications to users according to schedule. This is a revamp of the 2022 Med Tracker website",
+									desc: "Tracks medication schedules and sends email notifications to users according to schedule. This is a revamp of the 2022 Med Tracker website.",
 									img: "/med-tracker.png",
 									techStack: ["TypeScript", "Next.js", "Express", "MongoDB", "Tailwind CSS"],
 									link: "https://med-tracker.app",
@@ -340,7 +340,7 @@ export default function Home() {
 								},
 								{
 									title: "Medicine Tracker (2022)",
-									desc: "Tracks medication schedules and sends text message notifications to users according to schedule. Also includes an interaction checker that uses National Library of Medicine's drug API. Won \"Most Impactful Project\" award at CodePath's SITE 2022 Demo Day",
+									desc: "Tracks medication schedules and sends text message notifications to users according to schedule. Also includes an interaction checker that uses National Library of Medicine's drug API. Won \"Most Impactful Project\" award at CodePath's SITE 2022 Demo Day.",
 									img: "/medtracker.png",
 									techStack: ["PostgreSQL", "Express", "React", "Node", "Bootstrap"],
 									video: "/medvid.mp4",
