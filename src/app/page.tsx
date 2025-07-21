@@ -323,10 +323,10 @@ export default function Home() {
 									link: "https://med-tracker.app",
 								},
 								{
-									title: "SinkThatShip",
+									title: "SinkThatShip.com",
 									desc: `Multiplayer web game with real-time match-making, leaderboards & in-game chat.  
 									Built with Next.js, Express, Socket.IO & PostgreSQL.  
-									Live at sinkthatship.com`,
+									Live at sinkthatship.com.`,
 									img: "/sinkthatship.png",
 									techStack: ["TypeScript", "Next.js", "Express", "Socket.IO", "PostgreSQL", "Tailwind CSS"],
 									link: "https://sinkthatship.com",
